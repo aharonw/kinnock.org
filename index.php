@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<title>We Are Kinnock | 2011</title>
 </head>
@@ -23,7 +23,7 @@
 		
 			<ul class="list">
 			<?php foreach ($people as $person): ?>
-				<li class="box" style="background-image:url('images/people/ben_1.jpg');">
+				<li class="box" style="background-image:url('images/people/<?php echo $person['id']; ?>.jpg');">
 					<div class="zone_1"></div>
 					<div class="zone_2"></div>
 					<div class="zone_3"></div>
@@ -64,7 +64,7 @@
 	</div>
 		</div>
 
-    <script src="list.min.js"></script>
+    <script src="js/list.min.js"></script>
 
     <script type="text/javascript">
             
